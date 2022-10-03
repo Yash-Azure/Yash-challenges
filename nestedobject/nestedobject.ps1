@@ -15,3 +15,7 @@ $nestedObjectcustom = @{
 $nestedObjectcustom.$getvalue
 
 }
+
+getobjectvalue -getvalue cloud
+(getobjectvalue -getvalue cloud).Keys
+(getobjectvalue -getvalue cloud).values
