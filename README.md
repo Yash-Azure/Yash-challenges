@@ -11,6 +11,8 @@ This solution provide us the 3-tier application infrastructure. Here, App-servic
 
 ![image](https://user-images.githubusercontent.com/64698286/193756105-9d133eac-0ea1-4d33-8026-3b41b967879d.png)
 
+![image](https://user-images.githubusercontent.com/64698286/193756592-c9448f04-c7b8-45db-bc6a-866f54ce5fac.png)
+
 ![image](https://user-images.githubusercontent.com/64698286/193756371-755570be-8966-4281-995a-a2fbac9f411e.png)
 
 
