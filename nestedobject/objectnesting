@@ -1,0 +1,20 @@
+Function Get-NestedObject ($obj){
+try{
+$obj.vendor
+$obj.resources["component1"]
+}
+catch{
+Write-Host "Please pass the object during function call"
+}
+}
+
+$cloud = @{
+    "vendor"    = "Microsoft"
+    "Platform"     = "Azure"
+    "Region" = "East-US"
+    "resources" = @{
+        "component1"  = "resource group"
+        "component2"    = "App Service"
+        "component3" = "sql"
+        }
+}
