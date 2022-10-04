@@ -9,11 +9,14 @@ resource "azurerm_service_plan" "yappplan" {
   sku_name            = "S2"
 }
 
+resource "azurerm_app_service_virtual_network_swift_connection" "example" {
+  app_service_id = azurerm_windows_web_app.yapp.id
+  subnet_id      = azurerm_subnet.ysubnet1.id
+}
 resource "azurerm_windows_web_app" "yapp" {
   depends_on = [
     azurerm_virtual_network.yvnet
   ]
-  virtual_network_subnet_id = azurerm_subnet.ysubnet1.id
   name                      = var.app_name
   location                  = azurerm_service_plan.yappplan.location
   service_plan_id           = azurerm_service_plan.yappplan.id
